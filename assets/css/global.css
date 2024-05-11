@@ -1,21 +1,9 @@
 * {
   padding: 0;
   margin: 0;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-  color: #000;
-  transition: all 0.5s;
-}
-ul li {
-  list-style: none;
-}
-.container {
-  padding: 0px 20px;
-  margin: 0 auto;
-  max-width: 1232px;
-}
+
 body {
   font-family: "robotoregular", sans-serif;
 }
@@ -66,3 +54,40 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s;
+}
+ul li {
+  list-style: none;
+}
+.container {
+  padding: 0px 20px;
+  margin: 0 auto;
+  max-width: 1232px;
+}
+
+/* slick dots */
+.slick-dots{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  position: absolute;
+  top:92%;
+  left:50%;
+}
+.slick-dots li button{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0;
+  
+  background: #f19696;
+}
+ li.slick-active button{
+  background: #ed7878;
+ } 
+
