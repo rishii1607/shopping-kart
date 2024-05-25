@@ -3,6 +3,10 @@ $(document).ready(function() {
         $(".nav").slideToggle();
         // $(this).toggleClass("active");
     });
+    $(".menu-dropdown").click(function() {
+      $(this).toggleClass("active");
+      $(this).parent().closest('li').find(".submenu").slideToggle();
+   });
     $('.banner-slider').slick({
         arrows: false,
         dots: true,

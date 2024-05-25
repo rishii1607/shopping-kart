@@ -69,14 +69,16 @@ ul li {
 }
 
 /* slick dots */
-.slick-dots{
-  display:flex;
+
+.slick-dots {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   position: absolute;
-  top:92%;
-  left:50%;
+  top: 103%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .slick-dots li button{
   width: 10px;
@@ -98,4 +100,9 @@ ul li {
  }
  .product-slider .slick-list {
   margin: 0 -20px;
+ }
+ @media (min-width: 768px) {
+  .slick-dots{
+top: 92%;
+  }
  }
