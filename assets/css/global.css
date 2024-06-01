@@ -106,3 +106,19 @@ ul li {
 top: 92%;
   }
  }
+
+
+
+
+ body.active-mode{
+  background: #000 !important;
+}
+.active-mode .logo{
+  display: none;
+}
+.active-mode .logo-dark{
+  display: block;
+}
+.active-mode .magnify i{
+  color: #fff;
+}
