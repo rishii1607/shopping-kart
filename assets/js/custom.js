@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  $(".dark-mode").click(function () {
-    $("body").toggleClass("active-mode");
-  });
   $(".hamburger").click(function () {
     $(".nav").slideToggle();
   });
@@ -30,3 +27,39 @@ $(document).ready(function () {
     ],
   });
 });
+
+
+
+
+// switch to dark mode
+$(document).ready(function() {
+  // Check LocalStorage for Existing Key and set Mode
+      if (localStorage.getItem("mode") == "dark") {
+      $( "body" ).addClass( "active-mode" );
+         
+      } else if (localStorage.getItem("mode") == "light"){
+          $( "body" ).removeClass( "active-mode" );
+         
+      }
+  // Check LocalStorage for Existing Key then Detect Browswer "prefers-color-scheme" and set Mode
+      var mq = window.matchMedia( '(prefers-color-scheme: dark)' );
+      if (localStorage.getItem("mode") == "light"){
+          $( "body" ).removeClass( "active-mode" );
+         
+      } else if ( mq.matches ){
+          $( "body" ).addClass( "active-mode" );
+         
+      }
+  });
+// Toggle Mode and set LocalStorage Key
+  $( ".dark-mode" ).on("click", function() {
+      if( $( "body" ).hasClass( "active-mode" )) {
+        $( "body" ).removeClass( "active-mode" );
+       
+        localStorage.setItem("mode","light");
+      } else {
+        $( "body" ).addClass( "active-mode" );
+       
+        localStorage.setItem("mode","dark");
+      }
+  });

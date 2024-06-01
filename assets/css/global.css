@@ -107,8 +107,11 @@ top: 92%;
   }
  }
 
+/* for dark mode  */
 
-
+.active-mode .hamburger .line{
+  background-color: #fff;
+}
 
  body.active-mode{
   background: #000 !important;
@@ -122,3 +125,43 @@ top: 92%;
 .active-mode .magnify i{
   color: #fff;
 }
+
+
+
+.active-mode .footer-section{
+  background-color: #000;
+}
+.active-mode .footer-section h4{
+  color: #fff;
+}
+
+
+
+
+.active-mode .product-view-section  h2{
+  color:#fff;
+}
+
+.active-mode .specification-section{
+  border-color: #fff;
+}
+.active-mode .money-back{
+  border-color: #fff;
+} 
+.active-mode .shipping-section {
+  color: #fff;
+}
+.active-mode .shipping-cart{
+  color:#fff;
+}
+.active-mode .specification-section h3{
+  color:#fff;
+}
+.active-mode .specification-section span{
+  color:#fff;
+}
+.active-mode .specification-section h3{
+  border-color: #fff;
+} 
+
+

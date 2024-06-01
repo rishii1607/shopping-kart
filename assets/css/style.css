@@ -42,7 +42,7 @@
 .logo {
   width: 100%;
 }
-.logo-dark{
+.logo-dark {
   display: none;
 }
 .nav {
@@ -163,6 +163,7 @@ ul.submenu {
   background-color: #ff5353;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 .btn a {
   transition: all 0.5s;
@@ -630,7 +631,7 @@ h3 a {
   /* header section start */
   .header-2 {
     padding: 0;
-}
+  }
   .nav {
     position: static;
     display: inline-block;
@@ -667,23 +668,23 @@ h3 a {
     font-size: 14px;
     font-weight: 500;
   }
- ul.submenu li {
-  padding: 14px 20px;
-  cursor: pointer;
-  transition: all 0.5s;
- }
- ul.submenu li:hover {
-  background: #e9e2d8;
- }
- 
-.nav li:hover .submenu{
-  display: block;
-  position: absolute;
-  top:100%;
-  width:250px;
-  left:0;
-  background-color: #fff;
-}
+  ul.submenu li {
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  ul.submenu li:hover {
+    background: #e9e2d8;
+  }
+
+  .nav li:hover .submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 250px;
+    left: 0;
+    background-color: #fff;
+  }
 
   .ti-angle-down {
     display: none;
@@ -726,112 +727,157 @@ h3 a {
   /* feature section end */
 }
 
-
 /* product.html start*/
 /* image section start */
-.product-view-section{
+.product-view-section {
   padding: 30px 0;
- }
-.product-view-section h2{
-  padding-bottom:15px;
+  background-color: #fef7f6;
 }
-.img-section{
+.product-view-section h2 {
+  padding-bottom: 15px;
+}
+.img-section {
   margin-bottom: 16px;
 }
-.img-section .img-wrap{
+.img-section .img-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.img-section .img-wrap img{
+.img-section .img-wrap img {
   width: 23%;
   height: 23%;
-
 }
-.img-section .main-img{
-  width:100%;
+.img-section .main-img {
+  width: 100%;
   margin-bottom: 7px;
 }
 
- .shipping-section p{
-  font-size:15px;
+.shipping-section p {
+  font-size: 15px;
   margin-bottom: 10px;
- }
- .shipping-section h3{
-  font-size:30px;
+}
+.shipping-section h3 {
+  font-size: 30px;
   margin-bottom: 10px;
- }
- .shipping-cart{
+}
+.shipping-cart {
   display: flex;
   gap: 6px;
- }
- .shipping-section i{
-  font-size:15px;
+}
+.shipping-section {
+  padding: 20px 0;
+}
+.shipping-section i {
+  font-size: 15px;
   margin-bottom: 10px;
   display: inline-block;
- }
- .money-back{
+}
+.money-back {
   padding: 10px;
   text-align: center;
   border: 1px solid #000;
   border-radius: 6px;
   width: 100%;
   display: block;
- }
- .shipping-section span{
-  font-size:15px;
+}
+.shipping-section span {
+  font-size: 15px;
   margin-bottom: 10px;
   display: inline-block;
- }
- .shipping-section h4{
-  font-size:20px;
-  
+}
+.shipping-section h4 {
+  font-size: 20px;
+
   margin-bottom: 10px;
- }
- .payment-method{
+}
+.payment-method {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
   flex-wrap: wrap;
- }
- .payment-method img{
+}
+.payment-method img {
   width: auto;
   height: 26px;
- }
- .img-section-btn{
+}
+.img-section-btn {
   display: flex;
   align-items: center;
   gap: 10px;
- }
- .img-section-btn .btn{
- min-width: auto;
- width: 100%;
- }
+}
+.img-section-btn .btn {
+  min-width: auto;
+  width: 100%;
+}
+.specification-section {
+  padding: 10px 0;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.specification-section .position span {
+  font-size: 15px;
+}
+.specification-section h3 {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.specification-section .quality{
+  display: flex;
+  gap:40px;
+}
+.specification-section .position{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.specification-section  span{
+  margin-bottom: 10px;
+}
+.specification-section .position-specify{
+  display: flex;
+  flex-direction: column;
+}
 /* image section end */
 /* product.html end*/
 
 @media (min-width: 768px) {
-  .product-main{
+  .product-main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: center;
-   }
-   .img-section{
+   align-items: start;
+  }
+  .img-section {
     width: 40%;
-   }
-   .shipping-section{
+  }
+  .shipping-section {
     width: 50%;
-   }
-   .product-view-section h2{
+  }
+  
+  .product-view-section h2 {
     font-size: 30px;
-   }
+  }
+  .specification-section{
+    width:100%;
+  }
+  .specification-section .position{
+    width:40%;
+    margin-left: 20px;
+  }
+
 }
 @media (min-width: 992px) {
-   .img-section{
+  .img-section {
     width: 30%;
-   }
-   .shipping-section{
+  }
+  .shipping-section {
     width: 40%;
-   }
+  }
+  .specification-section{
+    width:25%;
+  }
 }
