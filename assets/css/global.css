@@ -116,7 +116,7 @@ top: 92%;
  body.active-mode{
   background: #292929;
 }
-.active-mode .header-2{
+.active-mode .header{
   background: #000;
 }
 .active-mode .logo{
@@ -136,22 +136,19 @@ top: 92%;
 }
 .active-mode ul li .submenu li a{
 color:#fff;
-}
+ }
+ /*
 .active-mode ul li:hover .submenu li a{
-  color:#000;
-  }
+  color:#fff;
+  } */
   .active-mode .top-header-1 {
     background-color: #292929;
 }
 .active-mode .top-header-1 a{
   color: #fff;
 }
-.active-mode .nav > ul > li:hover {
-  background-color: transparent;
-}
-.active-mode .nav li:hover .submenu {
-  background-color: #000;
-}
+
+
 /* section */
 
 .active-mode h2 {
@@ -225,10 +222,18 @@ color:#fff;
 
 /* header */
 @media (min-width: 992px) {
+  .active-mode .nav li:hover .submenu {
+    background-color: #000;
+  }
+  .active-mode .nav > ul > li:hover {
+    background-color: transparent;
+  }
   .active-mode ul li:hover .submenu li a{
     color:#fff;
     }
     .active-mode ul li:hover .submenu li:hover a{
       color:#000;
       }
+      
 }
+
