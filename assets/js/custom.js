@@ -26,7 +26,33 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".product-show-slider").slick({
+    arrows: false,
+    // dots: true,
+    fade: true,
+    asNavFor: '.sub-product-slider'
+  });
+  $(".sub-product-slider").slick({
+    arrows: false,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode: true,
+    focusOnSelect: true,
+    asNavFor: '.product-show-slider',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
+
 
 
 
