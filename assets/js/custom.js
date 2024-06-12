@@ -15,7 +15,7 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     responsive: [
       {
         breakpoint: 768,
@@ -33,23 +33,23 @@ $(document).ready(function () {
     asNavFor: '.sub-product-slider'
   });
   $(".sub-product-slider").slick({
-    arrows: false,
+    arrows: true,
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     centerMode: true,
     focusOnSelect: true,
     asNavFor: '.product-show-slider',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //     },
+    //   },
+    // ],
   });
 });
 
